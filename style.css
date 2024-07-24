@@ -1,0 +1,115 @@
+h1 {
+    color: orangered;
+    text-align: center;
+}
+h2 {
+    color: red;
+}
+body {
+    background-color: #cc99ff;
+}
+
+
+.square{
+    height: 50px;
+    width: 400px;
+    background-color: orange;
+    margin: auto;
+    align-self: center;
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+} 
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: white;
+}
+
+ul.topnav li.menu {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.menu {
+        display: block;
+        float: right;
+    }
+}
+
+ul.secondnav li {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.secondnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.secondnav li.menuButton {
+    float: right;
+}
+
+ul.secondnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.secondnav li.menuButton {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    ul.secondnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.secondnav li.menuButton {
+        display: block;
+        float: right;
+    }
+}
